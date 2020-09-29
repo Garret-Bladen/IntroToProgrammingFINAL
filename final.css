@@ -1,0 +1,131 @@
+body {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    background-color: #eee;
+}
+#MAINparent {
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+}
+#centerParent {
+    display: flex;
+    position: fixed;
+    top: 0;
+    width: 55vw;
+    height: min-content;
+    background-color: white;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: -30px;
+    z-index: 10;
+}
+#titleName {
+    display: flex;
+    font-weight: lighter;
+    margin: 50px 0 10px 0;
+    color: grey;
+    padding-left: 25px;
+}
+#mainTitle {
+    margin: 0 0 20px 0;
+    display: flex;
+    font-size: 40px;
+    font-weight: lighter;
+    padding-left: 25px;
+}
+#bottomCommentSection {
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    width: 55vw;
+    height: 10%;
+    background-color: #f9f9f9;
+    justify-content: center;
+    z-index: 10;
+}
+#displayName {
+    width: 9%;
+    height: 20%;
+    margin-top: 40px;
+}
+#comment {
+    width: 75%;
+    height: 20%;
+    margin: 40px 15px 0 15px;
+}
+#submit {
+    margin-top: 40px;
+    color: lightblue;
+    font-size: 20px;
+}
+#commentBuffer {
+    display: flex;
+    margin-top: 180px;
+    margin-bottom: 11%;
+    flex-direction: column;
+}
+.addedcomment {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 1%;
+    background-color: white;
+}
+.img {
+    display: flex;
+    width: 70px;
+    height: 70px;
+    background-size: cover;
+    background-position: center;
+}
+#mainparentchild {
+    width: 55vw;
+}
+#submit:hover {
+    cursor: pointer;
+}
+#displayname {
+    display: flex;
+    justify-content: space-between;
+    color: #ccc;
+}
+#editDelete {
+    display: flex;
+    color: black;
+}
+#displaynameparent {
+    width: 90%;
+    margin-left: 10px;
+}
+.edit:hover {
+    cursor: pointer;
+}
+.edit {
+    margin-right: 20%;
+    color: lightblue;
+}
+.delete:hover {
+    cursor: pointer;
+}
+.delete {
+    color: lightblue;
+}
+.realcomment {
+    font-size: 30px;
+}
+.commentedit {
+    width: 80%;
+    margin: 8px;
+}
+.submitedit:hover {
+    cursor: pointer;
+}
+.invisclass {
+    display: none;
+}
+.submitedit {
+    font-size: 18px;
+    color: lightblue;
+}
