@@ -19,7 +19,8 @@ $('#commentBuffer').on('click', '.edit', function() {
 $('#commentBuffer').on('click', '.submitedit', function() {
     let texteditparent = $(this).parents()[1];
     let finaltextedit = $(texteditparent).children()[0];
-    $(finaltextedit).text($('.commentedit').val());
+    let realcommentedit = $(this).prev();
+    $(finaltextedit).text($(realcommentedit).val());
     let removeedit = $(this).parents()[0];
     $(removeedit).toggleClass('invisclass');
 });
